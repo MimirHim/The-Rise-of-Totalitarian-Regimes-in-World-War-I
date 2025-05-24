@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I Structured My Code Using HTML Elements</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif !important;
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in-out forwards;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .floating-box {
+            position: relative;
+            width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            border: 2px solid #ccc;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+
+        .floating-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+            background-color: #f8f9fa;
+        }
+
+        .floating-box h1 {
+            font-size: 40px;
+            margin-bottom: 30px;
+            text-align: center;
+            line-height: 1.4;
+            font-weight: bold;
+            color: #424242;
+        }
+
+        .floating-box p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+            font-weight: 800;
+            color: #555555;
+        }
+
+        .animate-heading {
+            animation: fadeInUp 1s ease-in-out infinite alternate;
+        }
+
+        .animate-paragraphs {
+            animation: fadeInUp 1s ease-in-out infinite alternate;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            font-weight: 800;
+            color: #555555;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var floatingBox = document.querySelector(".floating-box");
+            floatingBox.style.opacity = 1;
+        });
+    </script>
+</head>
+<body>
+    <div class="floating-box">
+        <h1 class="animate-heading">How I Structured My Webpage Using HTML Elements</h1>
+        <p class="animate-paragraphs">
+            • Document Type Declaration for HTML5.<br>
+            • HTML Root Element with specified language attribute.<br>
+            • Head Section containing metadata and external resource links.<br>
+            • Character Encoding specification.<br>
+            • Viewport for Responsive Design definition.<br>
+            • Document Title setting.<br>
+            • Linking to Bootstrap CSS.<br>
+            • Preconnection to Google Fonts and linking to the Nunito font.<br>
+            • Embedded CSS Styles.<br>
+            • CSS Styles for:<br>
+            &nbsp;&nbsp;&nbsp; • Body, including font-family, opacity, and animation.<br>
+            &nbsp;&nbsp;&nbsp; • Navbar, with custom styles for background, border-radius, padding, and box-shadow.<br>
+            &nbsp;&nbsp;&nbsp; • Navbar brand/logo.<br>
+            &nbsp;&nbsp;&nbsp; • Navigation items and links, including hover effects.<br>
+            &nbsp;&nbsp;&nbsp; • History Section, with styling for a top margin.<br>
+            &nbsp;&nbsp;&nbsp; • Card element, covering appearance, transition effects, and layout styles.<br>
+            &nbsp;&nbsp;&nbsp; • Card hover effects, including a transform and background color change.<br>
+            &nbsp;&nbsp;&nbsp; • Top image in the card.<br>
+            &nbsp;&nbsp;&nbsp; • Different elements within the card, like card-body, card-title, card-text, and read-more.
+        </p>
+    </div>
+</body>
+</html>
