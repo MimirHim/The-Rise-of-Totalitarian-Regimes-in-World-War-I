@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rise of Totalitarian Regimes in WWI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif !important;
+            opacity: 0;
+            animation: fadeDown 1s ease-in-out forwards;
+            backface-visibility: hidden;
+        }
+
+        @keyframes fadeDown {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .navbar-custom {
+            background-color: #f8f9fa;
+            border-radius: 20px;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #424242;
+            text-align: center;
+        }
+
+        .nav-item {
+            font-size: 18px;
+            font-weight: bold;
+            color: #424242;
+            text-align: center;
+            padding: 15px 20px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .nav-item:hover {
+            background-color: #d9e1e8;
+            border-radius: 10px;
+        }
+
+        .nav-link {
+            color: #424242;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            color: #424242;
+            text-decoration: none;
+        }
+
+        .history-section {
+            margin-top: 50px;
+        }
+
+        .card {
+            border-radius: 20px;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+            background-color: #f8f9fa;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border: 8px solid #f8f9fa;
+            image-rendering: auto; /* Smooth image rendering */
+        }
+
+        .card-body {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .card-title {
+            font-weight: 800;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            flex-grow: 1;
+        }
+
+        .read-more {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" href="#">The Rise of Totalitarian Regimes in WWI</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item" id="history">
+            <a class="nav-link hover-animation" href="history.html"><b>History</b></a>
+        </li>
+        <li class="nav-item" id="animations">
+            <a class="nav-link hover-animation" href="Copyright.html">Copyright</a>
+        </li>
+        <li class="nav-item" id="how">
+            <a class="nav-link hover-animation" href="how.html"><b>How?</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="history" class="history-section">
+            <div class="container">
+                <div class="row">
+                    <!-- Topic box for Russian Revolution (1917) -->
+                    <div class="col-md-6">
+                        <div class="card animate__animated animate__fadeInUp">
+                            <img src="https://files.catbox.moe/usypsd.jpg" class="card-img-top" alt="Image 2">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Russian Revolution (1917)</b></h5>
+                                <p class="card-text">The Russian Revolution of 1917 was a pivotal event that reshaped the course of Russian and world history. It resulted in the establishment of a socialist state and sparked intense fears of communism among conservative forces.</p>
+                                <button class="btn btn-primary read-more" onclick="window.location.href='russian-revolution.html'">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic box for Treaty of Versailles (1919) -->
+                    <div class="col-md-6">
+                        <div class="card animate__animated animate__fadeInUp">
+                            <img src="https://files.catbox.moe/lr6568.jpg" class="card-img-top" alt="Image of Treaty of Versailles">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Treaty of Versailles (1919)</b></h5>
+                                <p class="card-text">The Treaty of Versailles, signed in 1919, was a peace settlement that aimed to conclude World War I and reorganize the international order. It imposed harsh terms on Germany, holding it primarily responsible for the war and demanding significant territorial and economic concessions.</p>
+                                <button class="btn btn-primary read-more" onclick="window.location.href='treaty-of-versailles.html'">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic box for Benito Mussolini and the March on Rome (1922) -->
+                    <div class="col-md-6">
+                        <div class="card animate__animated animate__fadeInUp">
+                            <img src="https://files.catbox.moe/0x0ew0.webp" class="card-img-top" alt="Image of Mussolini">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Benito Mussolini and the March on Rome (1922)</b></h5>
+                                <p class="card-text">In 1922, Mussolini and his Blackshirts marched on Rome, demanding power. Fearing civil war, King Victor Emmanuel III appointed Mussolini as Prime Minister, establishing Europe's first fascist regime. This set a precedent for totalitarian movements and eroded democratic institutions.</p>
+                                <button class="btn btn-primary read-more" onclick="window.location.href='mussolini-march-on-rome.html'">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic box for Wall Street Crash (1929) -->
+                    <div class="col-md-6">
+                        <div class="card animate__animated animate__fadeInUp">
+                            <img src="https://files.catbox.moe/ikftcp.jpg" class="card-img-top" alt="Image of Wall Street Crash">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Wall Street Crash (1929)</b></h5>
+                                <p class="card-text">The Wall Street Crash of 1929, also known as the Great Crash, was a devastating stock market collapse that marked the beginning of the Great Depression. It led to widespread financial hardship and economic downturn, impacting millions of people worldwide.</p>
+                                <button class="btn btn-primary read-more" onclick="window.location.href='wall-street-crash.html'">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic box for Soviet Collectivization and Purges (1930s) -->
+                    <div class="col-md-6">
+                        <div class="card animate__animated animate__fadeInUp">
+                            <img src="https://files.catbox.moe/f80865.jpg" class="card-img-top" alt="Image of Soviet Collectivization">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Soviet Collectivization and Purges (1930s)</b></h5>
+                                <p class="card-text">Stalin's policies in the Soviet Union, including forced collectivization and purges, resulted in mass famine and the elimination of perceived political threats. These actions solidified Stalin's authoritarian rule and showcased the brutality of totalitarian regimes.</p>
+                                <button class="btn btn-primary read-more" onclick="window.location.href='soviet-collectivization-purges.html'">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic box for Japanese Expansionism (1930s) -->
+                    <div class="col-md-6">
+                        <div class="card animate__animated animate__fadeInUp">
+                            <img src="https://files.catbox.moe/58g6t3.jpg" class="card-img-top" alt="Image of Japanese Expansionism">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Japanese Expansionism (1930s)</b></h5>
+                                <p class="card-text">Hideki Tojo, as Japan's Prime Minister and Army Minister from 1941 to 1944, led the country's aggressive and expansionist policies. These policies, including invasions of Manchuria, China, and other territories, intensified international tensions and disrupted diplomatic relations.</p>
+                                <button class="btn btn-primary read-more" onclick="window.location.href='japanese-expansionism.html'">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic box for Adolf Hitler and the Nazi Party (1933) -->
+                    <div class="col-md-6">
+                        <div class="card animate__animated animate__fadeInUp">
+                            <img src="https://files.catbox.moe/i2ruau.jpg" class="card-img-top" alt="Image of Adolf Hitler and the Nazi Party">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Adolf Hitler and the Nazi Party (1933)</b></h5>
+                                <p class="card-text">Hitler's Nazi Party rose to power in Germany in 1933, as he was appointed Chancellor. The Nazis implemented aggressive propaganda, anti-Semitic policies, and consolidated power, leading to the formation of a totalitarian state and the erosion of individual freedoms.</p>
+                                <button class="btn btn-primary read-more" onclick="window.location.href='hitler-nazi-party.html'">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic box for Enabling Act (1933) -->
+                    <div class="col-md-6">
+                        <div class="card animate__animated animate__fadeInUp">
+                            <img src="https://files.catbox.moe/l5iw7k.jpg" class="card-img-top" alt="Image of Enabling Act">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Enabling Act (1933)</b></h5>
+                                <p class="card-text">The Enabling Act granted Adolf Hitler dictatorial powers in Germany, allowing him to bypass the democratic process and dismantle key institutions. This marked a critical turning point as Hitler consolidated control, paving the way for the establishment of a totalitarian state and the erosion of individual freedoms.</p>
+                                <button class="btn btn-primary read-more" onclick="window.location.href='enabling-act.html'">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic box for Spanish Civil War (1936-1939) -->
+                    <div class="col-md-6">
+                        <div class="card animate__animated animate__fadeInUp">
+                            <img src="https://files.catbox.moe/whkupw.jpg" class="card-img-top" alt="Image of Spanish Civil War">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Spanish Civil War (1936-1939)</b></h5>
+                                <p class="card-text">The Spanish Civil War saw General Francisco Franco's nationalist forces, supported by fascist Italy and Germany, emerging victorious. This led to the establishment of another totalitarian regime in Europe, contributing to the continent's overall descent into authoritarianism.</p>
+                                <button class="btn btn-primary read-more" onclick="window.location.href='spanish-civil-war.html'">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic box for Munich Agreement (1938) -->
+                    <div class="col-md-6">
+                        <div class="card animate__animated animate__fadeInUp">
+                            <img src="https://files.catbox.moe/wvp252.jpg" class="card-img-top" alt="Image of Munich Agreement">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Munich Agreement (1938)</b></h5>
+                                <p class="card-text">The Munich Agreement allowed Hitler to annex Czechoslovakia's Sudetenland, highlighting the policy of appeasement. It was a failed attempt to prevent further aggression and maintain peace, ultimately emboldening Hitler and paving the way for World War II.</p>
+                                <button class="btn btn-primary read-more" onclick="window.location.href='munich-agreement.html'">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic box for Non-Aggression Pact (1939) -->
+                    <div class="col-md-6">
+                        <div class="card animate__animated animate__fadeInUp">
+                            <img src="https://files.catbox.moe/f174ci.jpg" class="card-img-top" alt="Image of Non-Aggression Pact">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Non-Aggression Pact (1939)</b></h5>
+                                <p class="card-text">The Molotov-Ribbentrop Pact between Nazi Germany and the Soviet Union in 1939 provided a temporary alliance, allowing Hitler to invade Poland without fear of Soviet intervention. This pact played a significant role in shaping the early stages of World War II.</p>
+                                <button class="btn btn-primary read-more" onclick="window.location.href='non-aggression-pact.html'">Read More</button>
+                            </div>
+                        </div>
+                    </div><!-- Topic box for Fall of France (1940) -->
+<div class="col-md-6">
+    <div class="card animate__animated animate__fadeInUp">
+        <img src="https://files.catbox.moe/8mbe8m.jpg" class="card-img-top" alt="Image of Fall of France">
+        <div class="card-body">
+            <h5 class="card-title"><b>Fall of France (1940)</b></h5>
+            <p class="card-text">Germany's swift victory over France in 1940 demonstrated the military effectiveness of totalitarian regimes and further undermined confidence in democratic systems. The Fall of France had profound implications for the course of World War II.</p>
+            <button class="btn btn-primary read-more" onclick="window.location.href='fall-of-france.html'">Read More</button>
+        </div>
+    </div>
+</div>
+
+<!-- Topic box for Attack on Pearl Harbor (1941) -->
+<div class="col-md-6">
+    <div class="card animate__animated animate__fadeInUp">
+        <img src="https://files.catbox.moe/5hhqxe.webp" class="card-img-top" alt="Image of Attack on Harbor">
+        <div class="card-body">
+            <h5 class="card-title"><b>Attack on Pearl Harbor (1941)</b></h5>
+            <p class="card-text">The attack on Pearl Harbor was a military strike carried out by the Japanese navy against the United States naval base at Pearl Harbor, Hawaii on December 7, 1941. This surprise attack led to the United States' entry into World War II.</p>
+            <button class="btn btn-primary read-more" onclick="window.location.href='attack-on-harbor.html'">Read More</button>
+        </div>
+    </div>
+</div>
+
+<!-- Topic box for D-Day Invasion (1944) -->
+<div class="col-md-6">
+    <div class="card animate__animated animate__fadeInUp">
+        <img src="https://files.catbox.moe/d9kymc.jpg" class="card-img-top" alt="Image of D-Day Invasion">
+        <div class="card-body">
+            <h5 class="card-title"><b>D-Day Invasion (1944)</b></h5>
+            <p class="card-text">The D-Day invasion in 1944, when Allied forces landed in Nazi-occupied France, marked a crucial turning point in the war. It signaled the beginning of the end for the Axis powers and paved the way for the eventual defeat of totalitarian regimes in Europe.</p>
+            <button class="btn btn-primary read-more" onclick="window.location.href='d-day-invasion.html'">Read More</button>
+        </div>
+    </div>
+</div>
+
+<!-- Topic box for Surrender of Germany (1945) -->
+<div class="col-md-6">
+    <div class="card animate__animated animate__fadeInUp">
+        <img src="https://files.catbox.moe/2472dk.jpg" class="card-img-top" alt="Image of Surrender of Germany">
+        <div class="card-body">
+            <h5 class="card-title"><b>Surrender of Germany (1945)</b></h5>
+            <p class="card-text">Hitler's suicide and the subsequent surrender of Germany in 1945 marked the end of the Nazi regime. This event represented a significant victory for the Allies and the beginning of the collapse of totalitarianism in Europe.</p>
+            <button class="btn btn-primary read-more" onclick="window.location.href='surrender-of-germany.html'">Read More</button>
+        </div>
+    </div>
+</div>
+
+<!-- Topic box for Surrender of Japan (1945) -->
+<div class="col-md-6">
+    <div class="card animate__animated animate__fadeInUp">
+        <img src="https://files.catbox.moe/2jihmb.jpg" class="card-img-top" alt="Image of Surrender of Japan">
+        <div class="card-body">
+            <h5 class="card-title"><b>Surrender of Japan (1945)</b></h5>
+            <p class="card-text">The bombings of Hiroshima and Nagasaki, along with the Soviet Union's declaration of war, led to Japan's surrender in 1945. This event brought an end to World War II and marked the conclusion of the era of totalitarian regimes, highlighting the devastating consequences of global conflict.</p>
+            <button class="btn btn-primary read-more" onclick="window.location.href='surrender-of-japan.html'">Read More</button>
+        </div>
+    </div>
+</div>
+
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="images">
+      <div class="container">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+    </div>
+  </footer>
+
+  <!-- Additional scripts and libraries here -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="script.js"></script> <!-- Javascript -->
+
+</body>
+
+</html>
